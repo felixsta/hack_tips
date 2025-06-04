@@ -65,5 +65,6 @@ ${7*7}  # → 49
 
 ##  LFI Wordlists
 https://github.com/danielmiessler/SecLists/tree/master/Fuzzing/LFI
+
 https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Linux
 
