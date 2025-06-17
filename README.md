@@ -67,4 +67,7 @@ ${7*7}  # → 49
 https://github.com/danielmiessler/SecLists/tree/master/Fuzzing/LFI
 
 https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Linux
+# SQLi
+https://www.sqlinjection.net/stacked-queries/
+
 
