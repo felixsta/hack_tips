@@ -8,9 +8,9 @@ def queueRequests(target, wordlists):
                            pipeline=False
                            )
 
-    for firstWord in open('/home/kali/numbers.txt'):
+    for i in range(1, 51):
        for secondWord in open('/home/kali/symbols.txt'):
-        engine.queue(target.req, [firstWord.rstrip(), secondWord.rstrip()])
+            engine.queue(target.req, [i, secondWord.rstrip()], label=str(i))
 
 
 def handleResponse(req, interesting):
