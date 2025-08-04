@@ -8,10 +8,10 @@ def queueRequests(target, wordlists):
                            pipeline=False
                            )
 
-    for i in range(1, 51):
+   for i in range(1, 51):
        for secondWord in open('/home/kali/symbols.txt'):
-            engine.queue(target.req, [i, secondWord.rstrip()], label=str(i))
-
+            sw=secondWord.rstrip()
+            engine.queue(target.req, [i, sw], label=sw)
 
 def handleResponse(req, interesting):
     # currently available attributes are req.status, req.wordcount, req.length and req.response
