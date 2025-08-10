@@ -60,6 +60,10 @@ https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-
 # SQLi
 https://www.sqlinjection.net/stacked-queries/
 https://pentestmonkey.net/category/cheat-sheet/sql-injection
-
+# Burp Suite 
+Turbo Intruder
+Copy as FFUF Command
+Hackvertor
+Param Miner
 
 
