@@ -52,57 +52,7 @@ ${7*7}  # → 49
 
 # LFI 
 ## Top 25 Local File Inclusion (LFI) Parameters
-
-?cat={payload}
-
-?dir={payload}
-
-?action={payload}
-
-?board={payload}
-
-?date={payload}
-
-?detail={payload}
-
-?file={payload}
-
-?download={payload}
-
-?path={payload}
-
-?folder={payload}
-
-?prefix={payload}
-
-?include={payload}
-
-?page={payload}
-
-?inc={payload}
-
-?locate={payload}
-
-?show={payload}
-
-?doc={payload}
-
-?site={payload}
-
-?type={payload}
-
-?view={payload}
-
-?content={payload}
-
-?document={payload}
-
-?layout={payload}
-
-?mod={payload}
-
-?conf={payload}
-
+Лежат в файле https://github.com/felixsta/hack_tips/blob/main/Top_25_LFI_Parameters
 ##  LFI Wordlists
 https://github.com/danielmiessler/SecLists/tree/master/Fuzzing/LFI
 
