@@ -116,3 +116,7 @@ Cero подключается к удалённым хостам и считыв
 ## SQLi (SQL Injection)
 - [Stacked Queries](https://www.sqlinjection.net/stacked-queries/)  
 - [Pentestmonkey SQLi Cheat Sheet](https://pentestmonkey.net/category/cheat-sheet/sql-injection)
+
+---
+## jQuery
+- `jquery.fn.jquery` в `jQuery` возвращает строку, содержащую текущую версию библиотеки `jQuery`. Например, если вы используете `jQuery 3.7.0`, то `jquery.fn.jquery` вернет `3.7.0`
