@@ -102,7 +102,7 @@ Cero подключается к удалённым хостам и считыв
 ---
 
 ## LFI (Local File Inclusion)
-
+- [PHP Wrappers](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/Wrappers.md) 
 - **Top 25 LFI Parameters** — [файл](https://github.com/felixsta/hack_tips/blob/main/Top_25_LFI_Parameters)  
 - **LFI Wordlists:**  
   - [SecLists/Fuzzing/LFI](https://github.com/danielmiessler/SecLists/tree/master/Fuzzing/LFI)  
