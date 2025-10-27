@@ -59,6 +59,10 @@ Cero подключается к удалённым хостам и считыв
 Упрощает экспорт запросов из Burp Suite для ffuf.  
 - Автоматически формирует команду ffuf по выбранному запросу
 
+### FFUF vhost enumeration
+ ```bash
+ ffuf -u "http://10.129.210.102" -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.inlanefreight.local" -fs 46166
+  ```
 ### Hackvertor
 Расширение для преобразования и кодирования данных в Burp Suite.  
 - Большое количество кодировок  
