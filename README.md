@@ -151,6 +151,12 @@ Cero подключается к удалённым хостам и считыв
 ```php
 grep -r "password{" /www 2>/dev/null
 ```
+
+## Default Password Database
+```php
+https://cirt.net/passwords/
+```
+
 ## ReconSpider — это самая передовая платформа Open Source Intelligence (OSINT) для сканирования IP-адресов, электронных писем, веб-сайтов, организаций и поиска информации из различных источников
 ```bash
 python3 ReconSpider.py http://web01.inlanefreight.local:8180/
